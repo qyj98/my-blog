@@ -1,0 +1,28 @@
+// 提供各种混合样式
+
+.self-center(@pos: absolute) {
+  position: @pos;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.self-fill(@pos: absolute) {
+  position: @pos;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.self-row-center(@pos:absolute){
+  position: @pos;
+  left: 50%;
+  transform: translateX(-50%);
+}
+   
+.self-col-center(@pos:absolute){
+  position: @pos;
+  top: 50%;
+  transform: translateY(-50%);
+}
